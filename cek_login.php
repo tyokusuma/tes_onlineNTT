@@ -9,7 +9,7 @@ $username = anti_injection($_POST['username']);
 $pass     = anti_injection(md5($_POST['password']));
 
 // pastikan username dan password adalah berupa huruf atau angka.
-if (!ctype_alnum($username) OR !ctype_alnum($pass
+if (!ctype_alnum($username) OR !ctype_alnum($pass)
   echo "Sekarang loginnya tidak bisa di injeksi lho.";
 }
 else{
